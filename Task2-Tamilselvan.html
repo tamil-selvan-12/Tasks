@@ -1,0 +1,102 @@
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+           }
+        .container
+        {
+            display:flex;
+            flex-wrap: wrap;
+            flex: 100%;
+        }
+        .content{
+            background-color: rgb(69, 110, 76);
+            height: 400px;
+        }
+        .feature-1{
+            background-color: rgb(124, 196, 222);  
+        }
+        .feature-1,.feature-2,.feature-3
+        {
+            height: 200px;
+            padding: 10px;
+            margin-left: 3px;
+        }
+        .feature-2
+        {
+            background-color: rgb(124, 222, 175);           
+        }
+        .feature-3
+        {
+            background-color: rgb(219, 83, 83);         
+        }
+        .Signup
+        {
+            background-color: rgb(237, 81, 81);
+            height:50px;
+            padding:10px;    
+        }
+        @media screen and (min-width: 761px) and (max-width:1600px)
+        {
+            .feature-1,.feature-2,.feature-3
+            {
+                flex:30%;
+            }
+            .content,.Signup
+            {
+                flex:100%;
+            }
+            .content
+            {
+                order: 1;
+            }   
+        }
+        @media screen and (min-width:481px) and (max-width:768px)
+        {
+            .feature-1,.feature-2,.feature-3,.Signup
+            {
+                flex:50%;
+            }
+            .content
+            {
+                flex:100%;
+            }          
+        }       
+        @media screen and (min-width:320px) and (max-width:480px)
+        {
+            .container{
+                flex:100%;
+            }
+        }  
+        
+       
+        </style>
+    <body style="font-family: sans-serif;font-style: italic;">
+        <div>
+            <header style="height: 80px;width: 100%;background-color: aquamarine;">
+                <div class="Header">
+                    <p style="text-align: center;">Header</p>
+                </div>
+            </header>
+        </div>
+        <div class="container">
+            <div class="content">
+                <p>Content</p>
+            </div>
+            <div class="feature-1">
+                <p style="text-align: center;">Feature </p>
+            </div>
+            <div class="feature-2">
+                <p style="text-align: center;">Feature </p>
+            </div>
+            <div class="feature-3">
+                <p style="text-align: center;">Feature </p>
+            </div>
+            <div class="Signup">
+                <p style="text-align: center;"> Signup</p>
+            </div>
+        </div>
+    </body>
+
+</html>
